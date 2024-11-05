@@ -1,4 +1,4 @@
-import { Theme } from "@types";
+import { Theme } from "@/types";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 
 export const lightTheme: Theme = {
