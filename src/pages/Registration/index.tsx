@@ -1,5 +1,4 @@
 import { Box, Container, Grid } from "@mui/material";
-import { RegistrationArea } from "./styles";
 import { BannerImage } from "@/components";
 
 export function Registration() {
