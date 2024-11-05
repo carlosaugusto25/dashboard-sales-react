@@ -1,5 +1,4 @@
 import { Box, Container, Grid } from "@mui/material";
-import { LoginArea } from "./styles";
 import { BannerImage } from "@/components";
 
 
