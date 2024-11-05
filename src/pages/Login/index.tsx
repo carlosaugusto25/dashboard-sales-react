@@ -1,5 +1,24 @@
+import { Box, Container, Grid } from "@mui/material";
+import { LoginArea } from "./styles";
+import { BannerImage } from "@/components";
+
+
+
 export function Login() {
     return (
-        <><h1>LOGIN DO INDEX</h1></>
+        <>
+            <Box>
+                <Grid container>
+                    <Grid item xs={12} sm={6} sx={{ alignItems: 'center', display: 'flex', height: '100vh' }}>
+                        <Container maxWidth='sm'>
+                            <h1>LOGIN</h1>
+                        </Container>
+                    </Grid>
+                    <Grid item sm={6} sx={{ display: { xs: 'none', sm: 'block' } }}>
+                        <BannerImage />
+                    </Grid>
+                </Grid>
+            </Box>
+        </>
     )
 }
