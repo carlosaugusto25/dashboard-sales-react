@@ -23,5 +23,6 @@ export const GlobalStyle = createGlobalStyle <{ theme?: DefaultTheme }>`
     button {
         cursor: pointer;
         outline: none;
+        font-family: 'Inter', sans-serif;
     }
 `;
