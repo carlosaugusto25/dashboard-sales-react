@@ -7,7 +7,7 @@ import { pixelToRem } from "@/utils";
 const StyledHeader = styled.header`
     background-color: ${({ theme }) => theme.appBackground};
     border-bottom: ${pixelToRem(1)} solid ${({ theme }) => theme.appDefaultStroke};
-    /* margin-bottom: ${pixelToRem(37)}; */
+    margin-bottom: ${pixelToRem(37)};
     width: 100%;
 `;
 
