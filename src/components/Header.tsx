@@ -27,7 +27,7 @@ export function Header() {
                         <StyledLogo height={40} width={40} />
                     </Link>
                     <Link to='/perfil'>
-                        <Avatar alt='Avatar' src='/user-icon.png' sx={{ width: pixelToRem(40), height: pixelToRem(40) }} />
+                        <Avatar alt='Avatar' src='/user.svg' sx={{ width: pixelToRem(40), height: pixelToRem(40) }} />
                     </Link>
                 </Box>
             </Container>

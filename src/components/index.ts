@@ -1,4 +1,5 @@
 export { AvatarsList } from './AvatarList';
+export { CustomChart } from './CustomChart';
 export { CustomTable } from './CustomTable';
 export { FormComponent } from './FormComponent';
 export { Header } from './Header';
