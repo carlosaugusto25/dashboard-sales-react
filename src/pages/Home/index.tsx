@@ -1,5 +1,10 @@
+import { Header } from "@/components";
+
 export function Home() {
     return (
-        <><h1>HOME DO INDEX</h1></>
+        <>
+            <Header />
+            <h1>Home</h1>
+        </>
     )
 }
