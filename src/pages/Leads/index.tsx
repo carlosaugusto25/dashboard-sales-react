@@ -1,5 +1,10 @@
+import { Header } from "@/components";
+
 export function Leads() {
     return (
-        <><h1>LEADS DO INDEX</h1></>
+        <>
+            <Header />
+            <h1>LEADS DO INDEX</h1>
+        </>
     )
 }

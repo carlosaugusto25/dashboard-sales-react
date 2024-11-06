@@ -1,5 +1,10 @@
+import { Header } from "@/components";
+
 export function Profile() {
     return (
-        <><h1>PERFIL DO INDEX</h1></>
+        <>
+            <Header />
+            <h1>PERFIL DO INDEX</h1>
+        </>
     )
 }
