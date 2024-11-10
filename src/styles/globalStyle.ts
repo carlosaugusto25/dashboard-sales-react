@@ -34,4 +34,25 @@ export const GlobalStyle = createGlobalStyle <{ theme?: DefaultTheme }>`
     .mb-2 {
         margin-bottom: ${pixelToRem(32)};
     }
+
+    .skeleton-loading {
+        animation: skeletonLoading 2s infinite alternate;
+    }
+
+    @keyframes skeletonLoading {
+        from {
+            background-color: ${({ theme }) => theme.appSkeletonFrom};
+        }
+        to {
+            background-color: ${({ theme }) => theme.appSkeletonTo};
+        }
+    }
+
+    .skeleton-loading-mh-1 {
+        min-height: ${pixelToRem(175)};
+    }
+
+    .skeleton-loading-mh-2 {
+        min-height: ${pixelToRem(400)};
+    }
 `;

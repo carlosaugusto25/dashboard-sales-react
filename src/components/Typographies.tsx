@@ -18,6 +18,14 @@ export const StyledH2 = styled.h2<TypographiesProps>`
     line-height: ${({ lineheight }) => pixelToRem(lineheight || 24)};
 `;
 
+export const StyledH3 = styled.h2<TypographiesProps>`
+    color: ${({ color }) => color || 'inherit'};
+    font-size: ${({ size }) => pixelToRem(size || 16)};
+    font-weight: ${({ weight }) => weight || 600};
+    letter-spacing: ${pixelToRem(-1)};
+    line-height: ${({ lineheight }) => pixelToRem(lineheight || 24)};
+`;
+
 export const StyledP = styled.p<TypographiesProps>`
     color: ${({ color }) => color || 'inherit'};
     font-size: ${({ size }) => pixelToRem(size || 16)};
