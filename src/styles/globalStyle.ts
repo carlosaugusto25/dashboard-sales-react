@@ -1,3 +1,4 @@
+import { pixelToRem } from '@/utils';
 import { createGlobalStyle } from 'styled-components'
 import { DefaultTheme } from 'styled-components';
 
@@ -24,5 +25,13 @@ export const GlobalStyle = createGlobalStyle <{ theme?: DefaultTheme }>`
         cursor: pointer;
         outline: none;
         font-family: 'Inter', sans-serif;
+    }
+
+    .mb-1 {
+        margin-bottom: ${pixelToRem(16)};
+    }
+
+    .mb-2 {
+        margin-bottom: ${pixelToRem(32)};
     }
 `;
