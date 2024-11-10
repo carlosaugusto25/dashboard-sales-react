@@ -11,6 +11,21 @@ const TableWrapper = styled.div`
         width: 100%;
         border-collapse: collapse;
 
+        .ellipsis {
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .ellipsis-sm {
+           width: ${pixelToRem(300)}; ;
+        }
+
+        .ellipsis-xs {
+           width: ${pixelToRem(150)}; ;
+        }
+
         th, td {
             text-align: left;
             height: ${pixelToRem(48)};
