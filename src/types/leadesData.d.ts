@@ -1,0 +1,3 @@
+export inteface DataPros {
+
+}
