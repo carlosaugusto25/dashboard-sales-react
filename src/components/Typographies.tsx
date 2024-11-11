@@ -49,5 +49,9 @@ export const StyledUl = styled.ul<TypographiesProps>`
     li {
         list-style-position: outside;
         margin-left: ${pixelToRem(15)};
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: ${pixelToRem(5)};
     }
 `;

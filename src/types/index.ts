@@ -12,3 +12,4 @@ export * from './profileData';
 export * from './starsData';
 export * from './theme';
 export * from './typographies';
+export * from './validationPassword';
