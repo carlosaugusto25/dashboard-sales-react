@@ -106,7 +106,7 @@ export function Leads() {
                             {
                                 !leadsError && !leadsLoading && (
                                     <>
-                                        <StyledH2 className="mb-1">Meus Leades</StyledH2>
+                                        <StyledH2 className="mb-1" id='leads'>Meus Leades</StyledH2>
                                         {
                                             leadsData?.length ? (
                                                 <CustomTable

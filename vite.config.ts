@@ -11,6 +11,9 @@ export default defineConfig({
       '@emotion/styled'
     ]
   },
+  server: {
+    host: true
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
