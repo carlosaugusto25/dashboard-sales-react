@@ -124,8 +124,8 @@ export function Profile() {
                                                         onChange: (e: ChangeEvent<HTMLInputElement>) => handleChange(index, (e.target as HTMLInputElement).value),
                                                     }))}
                                                     buttons={[
-                                                        { className: 'primary', disabled: !formValid || profileUpdateLoading, type: 'submit', onClick: handleSubmit, children: profileUpdateLoading ? 'Atualizando...' : 'Atualizar' },
-                                                        { className: 'alert', type: 'button', onClick: handleDelete, children: profileDeleteLoading ? 'Excluindo...' : 'Excluir minha conta', disabled: profileUpdateLoading },
+                                                        { id: 'update-profile', className: 'primary', disabled: !formValid || profileUpdateLoading, type: 'submit', onClick: handleSubmit, children: profileUpdateLoading ? 'Atualizando...' : 'Atualizar' },
+                                                        { id: 'delete-profile', className: 'alert', type: 'button', onClick: handleDelete, children: profileDeleteLoading ? 'Excluindo...' : 'Excluir minha conta', disabled: profileUpdateLoading },
                                                     ]}
                                                     messages={updateMessage}
                                                 />
@@ -139,7 +139,7 @@ export function Profile() {
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <CardComponent>
-                            <StyledButton className="alert" onClick={logout}>Sair</StyledButton>
+                            <StyledButton id="logout" className="alert" onClick={logout}>Sair</StyledButton>
                         </CardComponent>
                     </Grid>
                 </Grid>
