@@ -38,6 +38,15 @@ export const StyledButton = styled.button<ButtonProps>`
             color: ${({ theme }) => theme.buttons.alertHover};
         }
     }
+    &.borderless-primary {
+        background-color: none;
+        color: ${({ theme }) => theme.appLogoColor};
+        height: 0;
+        padding: 0;
+        &:hover {
+            opacity: .7;
+        }
+    }
 
     &:disabled {
         background-color: ${({ theme }) => theme.buttons.disabled};

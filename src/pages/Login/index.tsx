@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { jwtDecode } from 'jwt-decode';
 import Cookies from 'js-cookie';
@@ -16,10 +16,16 @@ import { pixelToRem, jwtExpirationDateConverter } from "@/utils";
 //TYPES
 import { MessageProps, LoginData, LoginPostData, DecodedJWT } from '@/types';
 
+//REDUX
+import { useSelector } from 'react-redux';
+import { RootState } from '@/redux';
+
 
 export function Login() {
 
     const navigate = useNavigate()
+
+    const { email, message } = useSelector((state: RootState) => state.createProfile)
 
     const inputs = [
         { type: 'email', placeholder: 'Email' },
@@ -30,19 +36,23 @@ export function Login() {
 
     const { formValues, formValid, handleChange } = useFormValid(inputs)
 
-    const handleMessage = (): MessageProps => {
-        if (!error) return { msg: '', type: 'success' }
+    const [msg, setMsg] = useState<MessageProps>({ msg: message ?? '', type: 'success' })
+
+    const handleMessage = (): void => {
+        if (!error) setMsg({ msg: message ?? '', type: 'success' })
         switch (error) {
             case 401:
-                return { msg: 'Email ou senha inválidos', type: 'error' }
+                return setMsg({ msg: 'Email ou senha inválidos', type: 'error' })
             default:
-                return { msg: 'Ocorreu um erro ao fazer login', type: 'error' }
+                return setMsg({ msg: 'Ocorreu um erro ao fazer login', type: 'error' })
         }
     }
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         await postData({ email: String(formValues[0]), password: String(formValues[1]) })
+        handleMessage()
+        setInterval(() => setMsg({ msg: '', type: 'success' }), 5000)
     }
 
     useEffect(() => {
@@ -55,6 +65,13 @@ export function Login() {
         }
         if (Cookies.get('Autorization')) navigate('/home')
     }, [data, navigate])
+
+    useEffect(() => {
+        if (email) {
+            handleChange(0, email)
+            setInterval(() => setMsg({ msg: '', type: 'success' }), 5000)
+        }
+    }, [email])
 
     return (
         <>
@@ -83,9 +100,15 @@ export function Login() {
                                         children: loading ? 'Aguarde...' : 'Entrar',
                                         disabled: !formValid || loading,
                                         onClick: handleSubmit
+                                    },
+                                    {
+                                        className: 'borderless-primary',
+                                        type: 'button',
+                                        children: 'Criar conta',
+                                        onClick: () => navigate('/cadastro')
                                     }
                                 ]}
-                                messages={handleMessage()}
+                                messages={msg}
                             />
                         </Container>
                     </Grid>

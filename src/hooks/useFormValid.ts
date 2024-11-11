@@ -1,9 +1,18 @@
-import { InputProps } from "@/types";
+import { InputProps, ValidationPasswordType } from "@/types";
 import { useEffect, useState } from "react";
 
 export const useFormValid = (inputs: InputProps[]) => {
     const [formValues, setFormValues] = useState(inputs.map((input) => input.value || ''));
     const [formValid, setFormValid] = useState(false);
+
+    //VALIDATIONS   
+    const [validationPassword, setValidationPassword] = useState<ValidationPasswordType>({
+        hasUppercase: false,
+        hasNumber: false,
+        hasSpecialChar: false,
+        hasCorrectLenght: false
+    } as ValidationPasswordType);
+
 
     useEffect(() => {
         const allFieldsValid = inputs.every((input, index) => {
@@ -13,7 +22,12 @@ export const useFormValid = (inputs: InputProps[]) => {
                 return /\S+@\S+\.\S+/.test(String(formValues[index]));
             }
             if (input.type === 'password') {
-                return String(formValues[index]).length >= 7;
+                const password = String(value);
+                setValidationPassword((prev) => ({ ...prev, hasUppercase: /[A-Z]/.test(password) }));
+                setValidationPassword((prev) => ({ ...prev, hasNumber: /[0-9]/.test(password) }));
+                setValidationPassword((prev) => ({ ...prev, hasSpecialChar: /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password) }));
+                setValidationPassword((prev) => ({ ...prev, hasCorrectLenght: password.length >= 8 && password.length <= 16 }));
+                return validationPassword.hasUppercase && validationPassword.hasNumber && validationPassword.hasSpecialChar && validationPassword.hasCorrectLenght
             }
             return true
         });
@@ -28,5 +42,5 @@ export const useFormValid = (inputs: InputProps[]) => {
         })
     }
 
-    return { formValues, formValid, handleChange };
+    return { formValues, formValid, handleChange, validationPassword };
 }
