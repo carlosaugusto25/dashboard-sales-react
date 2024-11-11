@@ -6,7 +6,7 @@ const api = axios.create({
     baseURL: `${import.meta.env.VITE_API_BASE_URL}`,
 });
 
-export const usePost = <T, P>(endpoint: string) => {
+export const usePost = <T, P>(endpoint: string, withAuth?: boolean) => {
     const [data, setData] = useState<T | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<number | null>(null);
@@ -16,15 +16,21 @@ export const usePost = <T, P>(endpoint: string) => {
         setLoading(true);
         setError(null);
 
+        const headers = withAuth ? {
+            Authorization: `Bearer ${Cookies.get('Autorization')}`,
+            'Content-Type': 'application/json',
+            ...config?.headers
+        } : {
+            'Content-Type': 'application/json',
+            ...config?.headers
+        };
+
         try {
             const response = await api({
                 url: endpoint,
                 method: 'POST',
                 data: postData,
-                headers: {
-                    'Content-Type': 'application/json',
-                    ...config?.headers
-                },
+                headers: headers,
                 ...config
             });
             setData(response.data);
