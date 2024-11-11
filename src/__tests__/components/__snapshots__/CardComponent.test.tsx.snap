@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardComponent Dark Theme should match the snapshot without alert class 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #0f1535;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #21497d;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  border-color: #e80000;
+}
+
+.c0.success {
+  background-color: #008000;
+  border-color: #008000;
+}
+
+.c0.warning {
+  background-color: #f7a300;
+  border-color: #f7a300;
+}
+
+.c0 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+<div
+    class="c0 alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Dark Theme should match the snapshot without any class 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #0f1535;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #21497d;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  border-color: #e80000;
+}
+
+.c0.success {
+  background-color: #008000;
+  border-color: #008000;
+}
+
+.c0.warning {
+  background-color: #f7a300;
+  border-color: #f7a300;
+}
+
+.c0 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+<div
+    class="c0"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Dark Theme should match the snapshot without success class 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #0f1535;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #21497d;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  border-color: #e80000;
+}
+
+.c0.success {
+  background-color: #008000;
+  border-color: #008000;
+}
+
+.c0.warning {
+  background-color: #f7a300;
+  border-color: #f7a300;
+}
+
+.c0 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+<div
+    class="c0 success"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Dark Theme should match the snapshot without warning class 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #0f1535;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #21497d;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  border-color: #e80000;
+}
+
+.c0.success {
+  background-color: #008000;
+  border-color: #008000;
+}
+
+.c0.warning {
+  background-color: #f7a300;
+  border-color: #f7a300;
+}
+
+.c0 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+<div
+    class="c0 warning"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Light Theme should match the snapshot without alert class 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #e0e0e0;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  border-color: #e80000;
+}
+
+.c0.success {
+  background-color: #008000;
+  border-color: #008000;
+}
+
+.c0.warning {
+  background-color: #f7a300;
+  border-color: #f7a300;
+}
+
+.c0 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+<div
+    class="c0 alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Light Theme should match the snapshot without any class 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #e0e0e0;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  border-color: #e80000;
+}
+
+.c0.success {
+  background-color: #008000;
+  border-color: #008000;
+}
+
+.c0.warning {
+  background-color: #f7a300;
+  border-color: #f7a300;
+}
+
+.c0 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+<div
+    class="c0"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Light Theme should match the snapshot without success class 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #e0e0e0;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  border-color: #e80000;
+}
+
+.c0.success {
+  background-color: #008000;
+  border-color: #008000;
+}
+
+.c0.warning {
+  background-color: #f7a300;
+  border-color: #f7a300;
+}
+
+.c0 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+<div
+    class="c0 success"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Light Theme should match the snapshot without warning class 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #e0e0e0;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  border-color: #e80000;
+}
+
+.c0.success {
+  background-color: #008000;
+  border-color: #008000;
+}
+
+.c0.warning {
+  background-color: #f7a300;
+  border-color: #f7a300;
+}
+
+.c0 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+<div
+    class="c0 warning"
+  />
+</DocumentFragment>
+`;
