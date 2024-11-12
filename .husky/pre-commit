@@ -1,0 +1,6 @@
+echo 'Commit test init'
+
+#Prettier
+echo 'Running Prettier...'
+npm run format
+

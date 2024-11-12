@@ -1,0 +1,713 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledButton Dark Theme should match the snapshot without alert class 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  padding: 0 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.c0.primary {
+  background-color: #0c70f2;
+  color: #fff;
+}
+
+.c0.primary:hover {
+  background-color: #0061de;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  color: #fff;
+}
+
+.c0.alert:hover {
+  background-color: #d80000;
+}
+
+.c0.borderless-alert {
+  background-color: none;
+  color: #e80000;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-alert:hover {
+  color: #d80000;
+}
+
+.c0.borderless-primary {
+  background-color: none;
+  color: #fff;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-primary:hover {
+  opacity: .7;
+}
+
+.c0:disabled {
+  background-color: #313649;
+  color: #6d7b8e;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background-color: #313649;
+  color: #6d7b8e;
+}
+
+<button
+    class="c0 alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Dark Theme should match the snapshot without borderless-alert class 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  padding: 0 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.c0.primary {
+  background-color: #0c70f2;
+  color: #fff;
+}
+
+.c0.primary:hover {
+  background-color: #0061de;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  color: #fff;
+}
+
+.c0.alert:hover {
+  background-color: #d80000;
+}
+
+.c0.borderless-alert {
+  background-color: none;
+  color: #e80000;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-alert:hover {
+  color: #d80000;
+}
+
+.c0.borderless-primary {
+  background-color: none;
+  color: #fff;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-primary:hover {
+  opacity: .7;
+}
+
+.c0:disabled {
+  background-color: #313649;
+  color: #6d7b8e;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background-color: #313649;
+  color: #6d7b8e;
+}
+
+<button
+    class="c0 borderless-alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Dark Theme should match the snapshot without borderless-primary class 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  padding: 0 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.c0.primary {
+  background-color: #0c70f2;
+  color: #fff;
+}
+
+.c0.primary:hover {
+  background-color: #0061de;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  color: #fff;
+}
+
+.c0.alert:hover {
+  background-color: #d80000;
+}
+
+.c0.borderless-alert {
+  background-color: none;
+  color: #e80000;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-alert:hover {
+  color: #d80000;
+}
+
+.c0.borderless-primary {
+  background-color: none;
+  color: #fff;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-primary:hover {
+  opacity: .7;
+}
+
+.c0:disabled {
+  background-color: #313649;
+  color: #6d7b8e;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background-color: #313649;
+  color: #6d7b8e;
+}
+
+<button
+    class="c0 borderless-primary"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Dark Theme should match the snapshot without disabled status 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  padding: 0 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.c0.primary {
+  background-color: #0c70f2;
+  color: #fff;
+}
+
+.c0.primary:hover {
+  background-color: #0061de;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  color: #fff;
+}
+
+.c0.alert:hover {
+  background-color: #d80000;
+}
+
+.c0.borderless-alert {
+  background-color: none;
+  color: #e80000;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-alert:hover {
+  color: #d80000;
+}
+
+.c0.borderless-primary {
+  background-color: none;
+  color: #fff;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-primary:hover {
+  opacity: .7;
+}
+
+.c0:disabled {
+  background-color: #313649;
+  color: #6d7b8e;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background-color: #313649;
+  color: #6d7b8e;
+}
+
+<button
+    class="c0 primary"
+    disabled=""
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Dark Theme should match the snapshot without primary class 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  padding: 0 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.c0.primary {
+  background-color: #0c70f2;
+  color: #fff;
+}
+
+.c0.primary:hover {
+  background-color: #0061de;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  color: #fff;
+}
+
+.c0.alert:hover {
+  background-color: #d80000;
+}
+
+.c0.borderless-alert {
+  background-color: none;
+  color: #e80000;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-alert:hover {
+  color: #d80000;
+}
+
+.c0.borderless-primary {
+  background-color: none;
+  color: #fff;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-primary:hover {
+  opacity: .7;
+}
+
+.c0:disabled {
+  background-color: #313649;
+  color: #6d7b8e;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background-color: #313649;
+  color: #6d7b8e;
+}
+
+<button
+    class="c0 primary"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Light Theme should match the snapshot without alert class 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  padding: 0 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.c0.primary {
+  background-color: #0c70f2;
+  color: #fff;
+}
+
+.c0.primary:hover {
+  background-color: #0061de;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  color: #fff;
+}
+
+.c0.alert:hover {
+  background-color: #d80000;
+}
+
+.c0.borderless-alert {
+  background-color: none;
+  color: #e80000;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-alert:hover {
+  color: #d80000;
+}
+
+.c0.borderless-primary {
+  background-color: none;
+  color: #0c70f2;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-primary:hover {
+  opacity: .7;
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background-color: #ccc;
+  color: #666;
+}
+
+<button
+    class="c0 alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Light Theme should match the snapshot without borderless-alert class 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  padding: 0 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.c0.primary {
+  background-color: #0c70f2;
+  color: #fff;
+}
+
+.c0.primary:hover {
+  background-color: #0061de;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  color: #fff;
+}
+
+.c0.alert:hover {
+  background-color: #d80000;
+}
+
+.c0.borderless-alert {
+  background-color: none;
+  color: #e80000;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-alert:hover {
+  color: #d80000;
+}
+
+.c0.borderless-primary {
+  background-color: none;
+  color: #0c70f2;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-primary:hover {
+  opacity: .7;
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background-color: #ccc;
+  color: #666;
+}
+
+<button
+    class="c0 borderless-alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Light Theme should match the snapshot without borderless-primary class 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  padding: 0 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.c0.primary {
+  background-color: #0c70f2;
+  color: #fff;
+}
+
+.c0.primary:hover {
+  background-color: #0061de;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  color: #fff;
+}
+
+.c0.alert:hover {
+  background-color: #d80000;
+}
+
+.c0.borderless-alert {
+  background-color: none;
+  color: #e80000;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-alert:hover {
+  color: #d80000;
+}
+
+.c0.borderless-primary {
+  background-color: none;
+  color: #0c70f2;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-primary:hover {
+  opacity: .7;
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background-color: #ccc;
+  color: #666;
+}
+
+<button
+    class="c0 borderless-primary"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Light Theme should match the snapshot without disabled status 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  padding: 0 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.c0.primary {
+  background-color: #0c70f2;
+  color: #fff;
+}
+
+.c0.primary:hover {
+  background-color: #0061de;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  color: #fff;
+}
+
+.c0.alert:hover {
+  background-color: #d80000;
+}
+
+.c0.borderless-alert {
+  background-color: none;
+  color: #e80000;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-alert:hover {
+  color: #d80000;
+}
+
+.c0.borderless-primary {
+  background-color: none;
+  color: #0c70f2;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-primary:hover {
+  opacity: .7;
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background-color: #ccc;
+  color: #666;
+}
+
+<button
+    class="c0 primary"
+    disabled=""
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Light Theme should match the snapshot without primary class 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  padding: 0 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.c0.primary {
+  background-color: #0c70f2;
+  color: #fff;
+}
+
+.c0.primary:hover {
+  background-color: #0061de;
+}
+
+.c0.alert {
+  background-color: #e80000;
+  color: #fff;
+}
+
+.c0.alert:hover {
+  background-color: #d80000;
+}
+
+.c0.borderless-alert {
+  background-color: none;
+  color: #e80000;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-alert:hover {
+  color: #d80000;
+}
+
+.c0.borderless-primary {
+  background-color: none;
+  color: #0c70f2;
+  height: 0;
+  padding: 0;
+}
+
+.c0.borderless-primary:hover {
+  opacity: .7;
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background-color: #ccc;
+  color: #666;
+}
+
+<button
+    class="c0 primary"
+  />
+</DocumentFragment>
+`;
