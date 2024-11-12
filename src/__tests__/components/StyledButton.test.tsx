@@ -4,36 +4,38 @@ import { Theme } from "@/types";
 import { ThemeProvider } from "styled-components";
 import { themeList } from "@/resources/themeList";
 
-describe('StyledButton', () => {
-    const renderComponent = (theme: Theme, className?: string, props = {}) =>
-        render(
-            <ThemeProvider theme={theme}>
-                <StyledButton className={className} {...props} />
-            </ThemeProvider>
-        )
+describe("StyledButton", () => {
+  const renderComponent = (theme: Theme, className?: string, props = {}) =>
+    render(
+      <ThemeProvider theme={theme}>
+        <StyledButton className={className} {...props} />
+      </ThemeProvider>,
+    );
 
-    themeList.forEach(({ name, theme }) => {
-        describe(`${name}`, () => {
-            it('should match the snapshot without alert class', () => {
-                const { asFragment } = renderComponent(theme, 'alert')
-                expect(asFragment()).toMatchSnapshot()
-            })
-            it('should match the snapshot without primary class', () => {
-                const { asFragment } = renderComponent(theme, 'primary')
-                expect(asFragment()).toMatchSnapshot()
-            })
-            it('should match the snapshot without borderless-alert class', () => {
-                const { asFragment } = renderComponent(theme, 'borderless-alert')
-                expect(asFragment()).toMatchSnapshot()
-            })
-            it('should match the snapshot without borderless-primary class', () => {
-                const { asFragment } = renderComponent(theme, 'borderless-primary')
-                expect(asFragment()).toMatchSnapshot()
-            })
-            it('should match the snapshot without disabled status', () => {
-                const { asFragment } = renderComponent(theme, 'primary', { disabled: true })
-                expect(asFragment()).toMatchSnapshot()
-            })
-        })
-    })
-})
+  themeList.forEach(({ name, theme }) => {
+    describe(`${name}`, () => {
+      it("should match the snapshot without alert class", () => {
+        const { asFragment } = renderComponent(theme, "alert");
+        expect(asFragment()).toMatchSnapshot();
+      });
+      it("should match the snapshot without primary class", () => {
+        const { asFragment } = renderComponent(theme, "primary");
+        expect(asFragment()).toMatchSnapshot();
+      });
+      it("should match the snapshot without borderless-alert class", () => {
+        const { asFragment } = renderComponent(theme, "borderless-alert");
+        expect(asFragment()).toMatchSnapshot();
+      });
+      it("should match the snapshot without borderless-primary class", () => {
+        const { asFragment } = renderComponent(theme, "borderless-primary");
+        expect(asFragment()).toMatchSnapshot();
+      });
+      it("should match the snapshot without disabled status", () => {
+        const { asFragment } = renderComponent(theme, "primary", {
+          disabled: true,
+        });
+        expect(asFragment()).toMatchSnapshot();
+      });
+    });
+  });
+});

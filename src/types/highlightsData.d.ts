@@ -1,4 +1,4 @@
 export interface HighlightsDataProps {
-    value: number;
-    subtitle: string;
+  value: number;
+  subtitle: string;
 }
