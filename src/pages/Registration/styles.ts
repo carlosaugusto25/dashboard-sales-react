@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 export const RegistrationArea = styled.div`
-    background-color: #666;
+  background-color: #666;
 `;

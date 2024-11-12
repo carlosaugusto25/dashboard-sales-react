@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "jest --coverage",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "format": "prettier --write ./src"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

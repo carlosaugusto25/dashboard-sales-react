@@ -5,5 +5,5 @@
  */
 
 export function pixelToRem(pixels: number): string {
-    return `${pixels / 16}rem`;
+  return `${pixels / 16}rem`;
 }

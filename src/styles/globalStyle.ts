@@ -1,8 +1,8 @@
-import { pixelToRem } from '@/utils';
-import { createGlobalStyle } from 'styled-components'
-import { DefaultTheme } from 'styled-components';
+import { pixelToRem } from "@/utils";
+import { createGlobalStyle } from "styled-components";
+import { DefaultTheme } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle <{ theme?: DefaultTheme }>`
+export const GlobalStyle = createGlobalStyle<{ theme?: DefaultTheme }>`
     body, html {
         background: ${({ theme }) => theme.appBackground};
         color: ${({ theme }) => theme.appColor};
