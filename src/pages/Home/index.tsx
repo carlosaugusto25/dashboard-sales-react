@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 //COMPONENTS
 import {
   CardComponent,
@@ -26,6 +28,9 @@ import {
 } from "@/types";
 
 export function Home() {
+
+  const navigate = useNavigate()
+
   const {
     data: highlightsData,
     loading: highlightsLoading,
@@ -68,9 +73,10 @@ export function Home() {
                   id="total-sales"
                   className={
                     highlightsLoading
-                      ? "skeleton-loading skeleton-loading-mh-1"
-                      : ""
+                      ? "skeleton-loading skeleton-loading-mh-1 pointer"
+                      : "pointer"
                   }
+                  onClick={() => navigate("/leads")}
                 >
                   {!highlightsLoading && highlightsData && (
                     <>
@@ -90,9 +96,10 @@ export function Home() {
                   id="month-goals"
                   className={
                     highlightsData
-                      ? highlightsData[1].subtitle
-                      : "skeleton-loading skeleton-loading-mh-1"
+                      ? `${highlightsData[1].subtitle} pointer`
+                      : "skeleton-loading skeleton-loading-mh-1 pointer"
                   }
+                  onClick={() => navigate("/leads")}
                 >
                   {!highlightsLoading && highlightsData && (
                     <>
@@ -119,9 +126,10 @@ export function Home() {
                   id="total-leads"
                   className={
                     highlightsLoading
-                      ? "skeleton-loading skeleton-loading-mh-1"
-                      : ""
+                      ? "skeleton-loading skeleton-loading-mh-1 pointer"
+                      : "pointer"
                   }
+                  onClick={() => navigate("/leads")}
                 >
                   {!highlightsLoading && highlightsData && (
                     <>

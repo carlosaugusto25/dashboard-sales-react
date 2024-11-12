@@ -28,4 +28,8 @@ export const CardComponent = styled.div`
     text-decoration: none;
     color: inherit;
   }
+
+  &.pointer {
+    cursor: pointer;
+  }
 `;
