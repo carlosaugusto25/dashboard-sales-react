@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Dashboard Sales - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Context-API](https://img.shields.io/badge/Context--Api-000000?style=for-the-badge&logo=react)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
 
-Currently, two official plugins are available:
+<h4>Dashhboad integrado a uma API REST com:</h4>
+<ul>
+  <li>TypeScript e formas mais eficientes de escrever as tipagens</li>
+  <li>Formas mais eficientes de escrever e separar as partes das aplicações em componentes</li>
+  <li>Criação de Hooks personalizados que ajudam em uma padronização, organização e diminuição de escrita de códigoo</li>
+  <li>Uso do Context API para alternar entre o tema visual Claro e Escuro</li>
+  <li>Utilização do Redux para fluxo de cadastro de nova conta</li>
+  <li>React-Router-Dom para criar rotas públicas e privadas</li>
+  <li>Testes unitários com Jest e testes End-2-End com Cypress</li>
+  <li>Utlilização do Husky para fazer pré-testes nos commits</li>
+  <li>Git Flow para controlar cada passo da construção da aplicação com Git e GitHub</li>
+  <li>Fluxo de CI/CD</li>
+  <li>Uso do Material UI para ajudar na responsividade da aplicação</li>
+</ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>Link do deploy: https://dashboard-sales-react.vercel.app</h2>
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<p>Login Dark</p>
+<img src="https://i.ibb.co/8ryz699/dash-dark-login.png" alt="dash-dark-login" border="0">
+<p>Cadastro Dark</p>
+<img src="https://i.ibb.co/LvMq913/dash-dark-create.png" alt="dash-dark-create" border="0">
+<p>Home Dark</p>
+<img src="https://i.ibb.co/sg2LB1q/dash-dark-home.png" alt="dash-dark-home" border="0">
+<p>Leads Dark</p>
+<img src="https://i.ibb.co/W084j1S/dash-dark-leads.png" alt="dash-dark-leads" border="0">
+<p>Login Light</p>
+<img src="https://i.ibb.co/TR01SwC/dash-light-login.png" alt="dash-light-login" border="0">
+<p>Cadastro Light</p>
+<img src="https://i.ibb.co/GPhrcSc/dash-light-create.png" alt="dash-light-create" border="0">
+<p>Home Light</p>
+<img src="https://i.ibb.co/Zf81K7L/dash-light-home.png" alt="dash-light-home" border="0">
+<p>Leads Light</p>
+<img src="https://i.ibb.co/vJycqxZ/dash-light-leads.png" alt="dash-light-leads" border="0">
